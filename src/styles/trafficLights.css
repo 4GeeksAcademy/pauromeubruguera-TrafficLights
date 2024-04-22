@@ -1,0 +1,30 @@
+.trafficLightContainer {
+  background-color: black;
+  width: 120px;
+  padding: 1px 10px;
+}
+.trafficLight {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: block;
+  margin: 10px 0;
+}
+.glow-red {
+    box-shadow: 0px 0px 9px 4px red;
+    animation: glow 0.8s linear infinite alternate;
+  }
+  .glow-yellow {
+    box-shadow: 0px 0px 9px 4px yellow;
+    animation: glow 0.8s linear infinite alternate;
+  }
+  .glow-green {
+    box-shadow: 0px 0px 9px 4px green;
+    animation: glow 0.8s linear infinite alternate;
+  }
+  
+  @keyframes glow {
+    to {
+        box-shadow: 0px 0px 30px 20px yellowgreen;
+    }
+  }
